@@ -1,12 +1,12 @@
 <?php
 	$configTime 	= '2018-05-17';
 	
-	$s_title 		= "Maarifa Centre";
-	$s_site 		= "maarifacentre.cog.go.ke";
+	$s_title 		= "infohub-platfom";
+	$s_site 		= "infohub-platfom.com";
 
 	$adminConfig = array(		
 		'SITE_ALIAS' 	  		=> "",
-		'SITE_FOLDER' 	  		=> "/maarifacentre",
+		'SITE_FOLDER' 	  		=> "/infohub-platfom",
 		'SITE_TITLE_LONG'  		=> $s_title,	
 		'SITE_TITLE_SHORT' 		=> $s_title,
 		'SITE_DOMAIN_URI'  		=> $s_site,
@@ -24,14 +24,14 @@
 		'GALLIMG_WIDTH' 		=> "1200",
 		'GALLIMG_HEIGHT' 		=> "900",
 		
-		'SOCIAL_ID_FACEBOOK' 	    => "cogcommunication",
-        'SOCIAL_ID_FACEBOOK_WIDGET' => "1976052259313118",
-		'SOCIAL_ID_TWITTER' 	    => "KenyaGovernors",
-		'SOCIAL_ID_TWITTER_WIDGET'  => "774485859802484736",		
-		'SOCIAL_ID_YOUTUBE' 	    => "channel/UCRc_7mdtSUtHVORqEKaitHA",
+		'SOCIAL_ID_FACEBOOK' 	    => "#",
+        'SOCIAL_ID_FACEBOOK_WIDGET' => "#",
+		'SOCIAL_ID_TWITTER' 	    => "#",
+		'SOCIAL_ID_TWITTER_WIDGET'  => "#",		
+		'SOCIAL_ID_YOUTUBE' 	    => "#",
 		'SOCIAL_ID_LINKEDIN' 	=> "#",
 		'SOCIAL_ID_GOOGLE' 		=> "#",
-		'SOCIAL_ID_ADDTHIS' 		=> "ra-50f0c76b1a12dd47",
+		'SOCIAL_ID_ADDTHIS' 		=> "#",
 		
 		'_lists_date_format' 	=> "%b %e %Y",
 		'_lists_time_format' 	=> "%l:%i %p",
@@ -44,5 +44,5 @@
 	);
 	
 	if($_SERVER['HTTP_HOST'] == "localhost") { 
-		$adminConfig['SITE_FOLDER'] = "oi_maarifa_sj_git";
+		$adminConfig['SITE_FOLDER'] = "infohub-platfom";
 	}
