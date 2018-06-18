@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+
+@import url('../scripts/bootstrap/css/bootstrap.3.3.7.min.css');
+
+@import url('font-opensans/font-opensans.css');
+@import url('font-awesome/font-awesome.css');
+
+@import url(reset.css);
+
+
+@import url(base_styles.css);
+@import url(base_nav.css);
+@import url(base_responsive.css);
+
+@import url(base_forms.css);
+@import url(base_forms_new.css);
+@import url(base_grid.css);
+@import url('../scripts/modal/jquery.modal.css');
+@import url('../scripts/bxslider/jquery.bxslider.home.css');
+/*@import url('../scripts/multiselect/jquery.multiselect.css');
+@import url('../scripts/multiselect/jquery.multiselect.filter.css');*/
+@import url('../scripts/datatable/smoothness/jquery-ui-1.8.4.custom.css');
+
+
+
+/*@import url('../scripts/accordion/accordion.css');
+@import url('../scripts/newsticker/breakingNews.css');
+@import url(jquery.slide.css);*/
+
+/*@import url(app_projects.css);*/
+
+@import url(base_overrides.css);
+
+.box_nav_mega { position:absolute; top: 50px;right:0;height:40px; }
+
+
+
+@media only screen  and (max-width: 601px) 
+{
+	/*.wrap_head { border: none; }*/
+	.box_nav_mega { top: 12px; }
+	
+}
+
+
+.wrap-mega-menu {  height:40px; }
+.wrap-mega-menu ul.menu li a {
+height: 41px;
+line-height: 41px;
+}
+.slide-box #toppanel,
+.wrap-mega-menu ul.menu li.mega-hover>.sub-container {
+top: 40px !important;
+}
+
+
+.homeCont .nav_side li a,
+.homeCont .nav_dloads li a,
+.news-display li a,
+.event-venue a,
+#left-nav ul li a { font-size: 104%; /*color:#1A6534;*/ ; }
+
+.highbtn {
+  color: #333;
+  display:inline-block;
+  font-size: 11px;
+  font-weight: normal;
+  text-transform:uppercase;
+  margin: 4px 0 0;
+  padding: 2px 9px;
+  background-color: #FFEA00;
+}
+.highbtn.hgreen { background-color: #009900; color: #fff; }
+.highbtn.hcont {
+	margin: 0; padding:1px 3px; background-color:#7cc576; float:right; font-size:10px; min-width:50px; text-align:center; color:#fff; 
+}
+
+@media only print 
+{
+	header, .filter-form-slip, .wrap_footer, .btn-print { display: none; }
+}
+
+
+/* Top Search
+=================================*/
+.top-search{
+    background-color: rgba(0,0,0,0.1);
+    margin-top: 10px;
+    padding: 10px 15px;
+    display: none;
+}
+
+.top-search input.form-control{
+    background-color: transparent;
+    border: none;
+    -moz-box-shadow: 0px 0px 0px;
+    -webkit-box-shadow: 0px 0px 0px;
+    -o-box-shadow: 0px 0px 0px;
+    box-shadow: 0px 0px 0px;
+    color: #fff;
+    height: 40px;
+    padding: 0 15px;
+}
+
+.top-search .input-group-addon{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.top-search .input-group-addon.close-search{
+    cursor: pointer;
+}
+
+
+.shadow {
+    top: 0;
+    left: 0;
+    transition: all 125ms ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.shadow:focus,.shadow:hover {
+    top: -5px;
+    left: 4px;
+    box-shadow: -6px 6px 10px 0 rgba(0,0,0,.15)
+}
+
+.shadow a:focus h3,.shadow:focus h3 {
+    text-decoration: underline
+}
+
+
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Ubuntu Light'), local('Ubuntu-Light'), url(http://fonts.gstatic.com/s/ubuntu/v7/_aijTyevf54tkVDLy-dlnJBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(http://fonts.gstatic.com/s/ubuntu/v7/_aijTyevf54tkVDLy-dlnLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://fonts.gstatic.com/s/ubuntu/v7/zvCUQcxqeoKhyOlbifSAaevvDin1pK8aKteLpeZ5c0A.woff2) format('woff2'), url(http://fonts.gstatic.com/s/ubuntu/v7/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(http://fonts.gstatic.com/s/ubuntu/v7/OsJ2DjdpjqFRVUSto6IffJBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(http://fonts.gstatic.com/s/ubuntu/v7/OsJ2DjdpjqFRVUSto6IffLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(http://fonts.gstatic.com/s/ubuntu/v7/0ihfXUL2emPh0ROJezvraJBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(http://fonts.gstatic.com/s/ubuntu/v7/0ihfXUL2emPh0ROJezvraLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Ubuntu Light Italic'), local('Ubuntu-LightItalic'), url(http://fonts.gstatic.com/s/ubuntu/v7/DZ_YjBPqZ88vcZCcIXm6Vogp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2'), url(http://fonts.gstatic.com/s/ubuntu/v7/DZ_YjBPqZ88vcZCcIXm6VrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url(http://fonts.gstatic.com/s/ubuntu/v7/WB6rgjTg_oRfj6mlXZJbb3YhjbSpvc47ee6xR_80Hnw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/ubuntu/v7/kbP_6ONYVgE-bLa9ZRbvvnYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Ubuntu Medium Italic'), local('Ubuntu-MediumItalic'), url(http://fonts.gstatic.com/s/ubuntu/v7/ohKfORL_YnhBMzkCPoIqwogp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2'), url(http://fonts.gstatic.com/s/ubuntu/v7/ohKfORL_YnhBMzkCPoIqwrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'), url(http://fonts.gstatic.com/s/ubuntu/v7/OMD20Sg9RTs7sUORCEN-7Ygp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2'), url(http://fonts.gstatic.com/s/ubuntu/v7/OMD20Sg9RTs7sUORCEN-7brIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}

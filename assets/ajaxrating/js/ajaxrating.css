@@ -1,0 +1,97 @@
+/*  styles for the unit rater
+--------------------------------------------------------- 
+ryan masuga, masugadesign.com
+ryan@masugadesign.com 
+Licensed under a Creative Commons Attribution 3.0 License.
+http://creativecommons.org/licenses/by/3.0/
+See readme.txt for full credit details.
+--------------------------------------------------------- */
+
+.ratingblock {
+	display:inline-block;
+	border-bottom:0px solid #999;
+	padding:0px;
+	margin:0px;
+	height: 13px; 
+	}
+
+.loading {
+	height: 13px;
+	background: url('working.gif') 50% 50% no-repeat;
+	}
+	
+.unit-rating { /* the UL */
+	list-style:none;
+	margin: 0px;
+	padding:0px;
+	height: 13px !important;
+	position: relative;
+	background: url('starrating.gif') top left repeat-x transparent;	
+	background-size: 13px;
+	display:inline-block !important;	
+	}
+
+.unit-rating li{
+	list-style:none;
+    text-indent: -90000px;
+	padding:0px;
+	margin:0px;
+	/*\*/
+	float: left;
+	/* */
+	/*border: 1px solid;*/
+	}
+	
+.unit-rating li a {
+	outline: none;
+	display:block;
+	width:13px;
+	height: 13px;
+	text-decoration: none;
+	text-indent: -9000px;
+	z-index: 20;
+	position: absolute;
+	padding: 0px;
+	}
+	
+.unit-rating li a:hover{
+	background: url('starrating.gif') left center  transparent;
+	background-size: 13px;
+	z-index: 2;
+	left: 0px;
+	}
+
+.unit-rating a.r1-unit{left: 0px;}
+.unit-rating a.r1-unit:hover{width:13px;}
+.unit-rating a.r2-unit{left:13px;}
+.unit-rating a.r2-unit:hover{width: 26px;}
+.unit-rating a.r3-unit{left: 26px;}
+.unit-rating a.r3-unit:hover{width: 39px;}
+.unit-rating a.r4-unit{left: 39px;}	
+.unit-rating a.r4-unit:hover{width: 52px;}
+.unit-rating a.r5-unit{left: 52px;}
+.unit-rating a.r5-unit:hover{width: 65px;}
+.unit-rating a.r6-unit{left: 65px;}
+.unit-rating a.r6-unit:hover{width: 78px;}
+.unit-rating a.r7-unit{left: 78px;}
+.unit-rating a.r7-unit:hover{width: 91px;}
+.unit-rating a.r8-unit{left: 91px;}
+.unit-rating a.r8-unit:hover{width: 120px;}
+.unit-rating a.r9-unit{left: 120px;}
+.unit-rating a.r9-unit:hover{width: 135px;}
+.unit-rating a.r10-unit{left: 135px;}
+.unit-rating a.r10-unit:hover{width: 150px;}
+
+.unit-rating li.current-rating {
+	background: url('starrating.gif') left bottom  transparent;
+	background-size: 13px;
+	position: absolute;
+	height: 13px;
+	display: block;
+	text-indent: -9000px;
+	z-index: 1;
+	}
+
+.voted {color:#999;}
+.thanks {color:#36AA3D;}
+.static {color:#5D3126;}		

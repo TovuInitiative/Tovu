@@ -1,0 +1,234 @@
+
+div.course-price p {
+    font-size: 18px !important;
+}
+
+div.course-price p strong:nth-child(2) {
+    margin-left: 20px;
+}
+
+div.course-price p strong {
+    color: #fff !important;
+}
+
+#course-header {
+	padding: 20px;
+	color: #fff;
+}
+#course-header .course-price > div {
+    /*float: left;*/
+}
+
+#course-header .course-price > div:first-child {
+   /* margin-right: 60px;*/
+}
+
+#course-header .course-price > div p:first-child {
+    font-size: 13px !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 22px;
+    margin-top: 4px;
+}
+
+
+#course-header .course-price > div p:nth-child(2) {
+    font-size: 24px !important;
+    color: #fff;
+    margin-top: 0;
+}
+
+
+#course-header h1 { color: #FFF;  }
+#course-header h5 { color: #c8c5c4; font-size: 21px; }
+#course-header p { color: #c8c5c4; font-size: 21px; }
+
+#course-header p {
+    font-size: 23px;
+    line-height: 32px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#course-header hr { color: #c8c5c4; border: 0px solid #c8c5c4; background: #c8c5c4;   }
+	
+.course_download_wrapper a {
+    display: block;
+   /* float: left;*/
+    margin: 10px 0;
+    background: #595959;
+    padding: 12px 20px /*12px 48px*/;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+	
+	    margin: 0;
+    background: #e01d27;
+    transition: ease-in-out 0.3s;
+    -webkit-transition: ease-in-out 0.3s;
+}
+
+
+
+
+
+div.av-section-color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+	 z-index: 1 !important;
+}
+
+
+.nav-tabs > li > a {
+    padding: 12px 16px 13px 16px;
+    color: #FFF;
+	
+	border: 0;
+    font-size: 16px;
+    margin-right: 15px !important;
+    color: #fff;
+    transition: ease-in-out .2s;
+    border-radius: 0 !important;
+    font-weight: bold;
+}
+
+.nav-tabs > li > a.active {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.nav-tabs > li > a:hover {
+    background: #ccc;
+    color: #312e2c !important;
+    
+}
+
+.tab_inner_content h3 { font-weight: bold; margin-top: 20px;  }
+
+
+
+
+.widget {
+    background-color: #f2f2f2;
+    padding-top: 15px;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+}
+.more-widget {
+    background: #00ccff;
+    background-color: #00ccff !important;
+    margin-top: 0;
+    padding: 0 15px;
+    display: table;
+}
+.widget {
+    clear: both;
+    position: relative;
+    padding: 30px 0 30px 0;
+    float: none;
+}
+
+
+
+
+
+
+/* Datatable Locations Tab */
+
+
+/* hide second course column */
+
+
+
+
+.single-course table.dataTable, table.dataTable th, table.dataTable td {
+    font-size: 15px;
+}
+
+.single-course .dataTables_wrapper .dataTables_length {
+    /*float: right;
+    padding: 40px 0 10px 0px;
+    width: 16%;*/
+}
+
+
+/* -- ENDS -- */
+
+
+/*.single-course table.dataTable>tbody>tr.child ul li:last-child span.dtr-data:after {
+    position: relative;
+    top: -11px;
+}*/
+
+
+.single-course table.dataTable tbody td {
+    padding: 20px 8px;
+    border-bottom: 1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+    color: #000;
+}
+
+/*.single-course table.dataTable thead th {
+    padding: 10px 10px;
+}*/
+
+.single-course table.dataTable thead th {
+    border-bottom: 0;
+    width: auto;
+}
+
+.single-course table.dataTable a {
+    color: #e01d27;
+    text-decoration: none;
+}
+
+.single-course table.dataTable a:hover {
+    text-decoration: underline;
+}
+
+.single-course table.dataTable tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.single-course table.dataTable tfoot th {
+    border-top: 1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    /*padding: 30px 10px 6px 5px;*/
+}
+
+/*.single-course table.dataTable tfoot th:nth-child(6) {
+    width: 17% !important;
+}
+
+.single-course table.dataTable tfoot th:nth-child(5) {
+    width: 10% !important;
+}*/
+
+/*.single-course table.dataTable thead tr th:first-child:before {
+    content: "\f05a";
+    font: normal normal normal 14px/1 FontAwesome;
+    position: relative;
+    left: 4px;
+}*/
+
+
+/* Datatable CSS locationd ENDS */

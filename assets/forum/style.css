@@ -1,0 +1,187 @@
+/* BEGIN BASIC FORUM STYLES */
+body {
+	background-color: #FFF;
+	text-align: left;			/* make sure IE centers the page too */
+	font-family: "Droid Sans", tahoma, arial, sans-serif; font-size:13px; line-height: 190%; color: #000000; 
+	font-weight:normal;
+	padding:0;
+	margin:0;
+}
+
+#wrapper, #footer {
+	width: 100%/*900px*/;
+	margin: 0; 			/* center the page */
+	display:block; clear:both;
+}
+
+#content {
+	background-color: #fff;
+	border: 0px solid #000;
+	/*float: left;*/
+	
+	padding: 10px 0px 30px;
+	text-align: left;
+	width: 100%;				/* fill up the entire div */
+	display:block;
+	clear:both;
+}
+
+#menu {
+/*float: left;*/
+border: 0px solid #85826E;
+border-bottom: none;		/* avoid a double border */
+clear: both;				/* clear:both makes sure the content div doesn't float next to this one but stays under it */
+width:100%;
+/*height:20px;*/
+padding: 0px;
+background-color: #FFF;
+text-align: left;
+/*font-size: 85%;*/
+}
+
+#menu a:hover {
+	background-color: #009FC1;
+}
+
+#userbar {
+	background-color: #fff;
+	float: right;
+	width: 250px;
+	text-align:right;
+}
+
+#footer {
+	text-align:left;
+}
+
+/* begin table styles */
+table {
+	border-collapse: collapse;
+	width: 100%;
+	border-color: #FFF;
+}
+
+table td { 
+	border-width: 0px 0px 1px;
+	border-color: #ccc;
+}
+table a {
+	color:#369; text-decoration: none;
+}
+
+table a:hover {
+	/*color:#373737;*/ 	text-decoration: underline;
+}
+
+th {
+	background-color: #B40E1F;
+	color: #F0F0F0;
+	padding: 5px; text-transform:capitalize;
+}
+
+td {
+	padding: 5px; vertical-align:top;
+}
+
+/* Begin font styles */
+h1, h2 { margin: 0; padding: 0; }
+h3 { text-transform:uppercase; }
+h3, h4 { margin: 0 0 10px; padding: 0; font-size: 14px;}
+h4 {font-size: 13px; color: #999; font-weight:normal;}
+
+h3 a { color: #B40E1F; }
+
+
+
+/* Menu styles */
+.item {
+	background-color: #85826E;
+	border: 1px solid #85826E;
+	color: #FFF;
+	font-family: Arial;
+	padding: 0px 10px;
+	text-decoration: none;
+	line-height:2.0;
+	display:inline-block;
+}
+
+.leftpart {
+	width: 80%;
+}
+
+.rightpart {
+	width: 20%;
+}
+
+.small {
+	font-size: 75%;
+	color: #373737;
+}
+#footer {
+	font-size: 65%;
+	padding: 5px 20px;
+}
+
+.topic-post {
+	height: 100px;
+	overflow: auto;
+}
+
+.post-user	{
+	width: 150px;
+}
+.post-content {
+	padding: 5px 30px 30px;
+}
+
+textarea {
+	width: 90%;
+	height: 150px;
+}
+
+.thread { padding: 3px 0; }
+.thread a,
+.thread a:link            { padding-left:18px; color:#168ac4; text-decoration:none; font-weight:bold; background:url(image/bg_sprite_1.png) no-repeat 0 -148px; }
+
+
+
+/*
+@@ begin :: CUSTOM @@
+******************************************************/
+.wrap_fm_base { padding:20px 20px; }
+form.fm_base h3 { border-bottom: 1px solid #E42005; color: #7E7F83; padding-left: 10px; margin-bottom: 10px;}
+form.fm_base table /*.auto_size*/ { border: 0px solid; margin: 10px auto 20px;}
+form.fm_base table td { padding: 0.3em 0; margin: 0; border-color: #ddd;  }
+form.fm_base input, 
+form.fm_base textarea,
+form.fm_base select { width: 90%;   }
+form.fm_base .half_width { width: 159px; }
+form.fm_base select.half_width { width: 160px;}
+form.fm_base textarea { height:100px; }
+form.fm_base input[type=submit] { width: 200px; }
+
+input[type="radio"],input[type="checkbox"], input.radio { display:inline !important; line-height: 10px; padding:0 !important;   margin-top:0 !important;   width:25px !important; }
+
+
+
+table.tims { border:thin #bfbfbf solid;}
+table.tims tr:nth-child(even) {background: #f9f9f9;  }
+table.tims tr:nth-child(odd) {background: #F1F1F1;}
+
+
+
+.cat_current { display: inline-block; padding:0px 5px; font-size:10px; background:#F00; color:#FFF; font-weight:bold; }
+
+.header_lists {font-size: 125%; padding-bottom:15px;}
+
+.btn_jtrunc {
+	font-size: 75%;
+	color: #373737;
+	text-decoration: none !important;	
+}
+
+.inline { display:inline;}
+.float_right, .float_right a { float:right;}
+.width_auto { width:auto;}
+.txt75 { font-size: 75%;}
+.notransform { text-transform:none;}

@@ -1,0 +1,400 @@
+
+.uk-navbar-toggle{-moz-box-sizing:border-box;box-sizing:border-box;display:block;height:41px;padding:0 15px;float:right;margin-top:-1px;text-shadow:0 1px 0 #fff; text-align:right;}
+.uk-navbar-toggle:before{content:'';display:inline-block;height:100%;vertical-align:middle}
+.uk-navbar-toggle{font-size:18px;text-decoration:none}
+.uk-navbar-toggle:focus,.uk-navbar-toggle:hover{color:#FFF;text-decoration:none;outline:0}
+.uk-navbar-toggle:after{content:"\f0c9";font-family:FontAwesome;vertical-align:middle}
+.uk-navbar-toggle-alt:after{content:"\f002"}
+.uk-navbar-toggle{text-shadow:none;display:none;height:36px;font-size:16px;margin:10px 5px 0 5px;border-radius:3px;background:rgba(0, 0, 0, 0.12);box-shadow:0 1px 0 rgba(255, 255, 255, 0.08), 0 1px 1px rgba(0, 0, 0, 0.1) inset}
+.uk-navbar-toggle{color:#000}
+
+
+.uk-offcanvas{display:none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:1000;touch-action:none;background:rgba(0,0,0,.1)}
+ .uk-offcanvas.uk-active{display:block}
+ .uk-offcanvas-page{position:fixed;-webkit-transition:margin-left .3s ease-in-out;transition:margin-left .3s ease-in-out} 
+ .uk-offcanvas-bar{position:fixed;top:0;bottom:0;left:0;-webkit-transform:translateX(-100%);transform:translateX(-100%);z-index:1001;width:270px;max-width:100%;/*background:rgba(255,255,255,0.6);*/overflow-y:auto;-webkit-overflow-scrolling:touch;-webkit-transition:-webkit-transform .3s ease-in-out;transition:transform .3s ease-in-out;-ms-scroll-chaining:none}
+ .uk-offcanvas.uk-active .uk-offcanvas-bar.uk-offcanvas-bar-show{-webkit-transform:translateX(0%);transform:translateX(0%)}
+ .uk-offcanvas-bar-flip{left:auto;right:0;-webkit-transform:translateX(100%);transform:translateX(100%)}
+ .uk-offcanvas .uk-panel{margin:20px 2px;color:#777;text-shadow:0 1px 0 rgba(0,0,0,.5)}
+ .uk-offcanvas .uk-panel a:not([class]),.uk-offcanvas .uk-panel-title{color:#ccc}
+ .uk-offcanvas .uk-panel a:not([class]):hover{color:#fff}
+ .uk-offcanvas-bar:after{content:"";display:block;position:absolute;top:0;bottom:0;right:0;width:1px;background:rgba(0,0,0,.6);box-shadow:0 0 5px 2px rgba(0,0,0,.6)}
+ .uk-offcanvas-bar-flip:after{right:auto;left:0;width:1px;background:rgba(0,0,0,.6);box-shadow:0 0 5px 2px rgba(0,0,0,.6)}
+ 
+ .uk-offcanvas{background:rgba(0,0,0,0.9)}
+ .uk-offcanvas-page{margin-left:0 !important}
+ 
+ .uk-nav-offcanvas { margin-left: 0px; padding-left: 5px; }
+ .uk-nav-offcanvas li { margin: 0px; padding: 0px; display:block; }
+ 
+ .uk-nav-offcanvas>li>a{color:#F4F4F4;padding:10px 0px;border-top:0px solid rgba(255,255,255,.3);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);text-shadow:0 1px 0 rgba(0,0,0,.5)}
+ .uk-nav-offcanvas li a {display:block; line-height:normal; padding-left: 5px;  }
+ .uk-nav-offcanvas>.uk-open>a,html:not(.uk-touch) .uk-nav-offcanvas>li>a:focus,
+  html:not(.uk-touch) .uk-nav-offcanvas>li>a:hover{background:#404040;color:#fff;outline:0}
+ html .uk-nav.uk-nav-offcanvas>li.uk-active>a{background:#1a1a1a;color:#fff;box-shadow:inset 0 1px 3px rgba(0,0,0,.3)}
+ .uk-nav-offcanvas .uk-nav-header{color:#777;margin-top:0;border-top:1px solid rgba(0,0,0,.3);background:#404040;box-shadow:inset 0 1px 0 rgba(255,255,255,.05);text-shadow:0 1px 0 rgba(0,0,0,.5)}
+ .uk-nav-offcanvas .uk-nav-divider{border-top:1px solid rgba(255,255,255,.01);margin:0;height:4px;background:rgba(0,0,0,.2);box-shadow:inset 0 1px 3px rgba(0,0,0,.3)}
+ .uk-nav-offcanvas ul a{color:#ccc}
+ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover{color:#FFF193}
+ .uk-nav-offcanvas{border-bottom:1px solid rgba(0,0,0,.3);box-shadow:0 1px 0 rgba(255,255,255,.05)}
+ .uk-nav-offcanvas .uk-nav-sub{border-top:1px solid rgba(0,0,0,.3);box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+ 
+ .uk-nav-offcanvas a.current { background: #C24D00;}
+
+.uk-nav-offcanvas>li>a /*>ul>li>ul*/ { /**/ background:#404040; font-weight:bold; }
+.uk-nav-offcanvas>li>ul>li>a { font-weight: normal; border-bottom:1px solid rgba(255,255,255,.3); padding:4px 0; }
+
+.uk-nav-offcanvas>li>ul>li>ul>li>ul>li>a { font-size: 93.33%; color: #86A1A1; }	
+.uk-nav-offcanvas>li>ul>li>ul>li>ul>li>a:before {content: '- ';}
+
+.uk-nav-offcanvas li.button-search { display: none; }
+
+#nav_link_home { display: none; }
+
+
+.flex_width {  }
+
+@media only screen and ( min-width: 1023px ) 
+{
+	.page		{ width: 100%; }
+	.wrap_guts, .wrap_footer_guts { width: 100%;  }
+	.head_width { width: 100%; max-width: 1500px;  }
+	.page_width { /*width: 1180px;*/ width: 100%; max-width: 1500px; }
+}
+
+@media only screen and ( max-width: 1100px ) 
+{
+	#nav_link_acc { /*display: none; */}
+}
+
+/*  TABLET  : 1024px */
+@media only screen and ( max-width: 1023px  ){ 
+	.page { width: 98%; }
+	.page_margins, .page_width, .head_width, .wrap_guts { width: 100%;  }
+	.page_margins.pg-inside .page_width { width: 100%;}
+	.wrap_guts { border: 0px solid;}
+}
+
+
+/* TABLET  : 768px */ /*and (min-width: 768px)*/
+@media only screen and (max-width: 985px){
+   
+   .page_margins { border:1px solid #CDCDCD; border-width:0px 1px; }
+   
+   .head-main-nav .c83l { width: 70%; }
+   .head-main-nav .c16r { width: 28%; }
+   
+    
+  
+   	
+	
+	.flexslideshow.flexmain { height: auto;width: 100%; }
+	.flexslideshow.flexmain #slider .slides li,
+	.flexslideshow.flexmain #slider .slides li.flex-active-slide,
+	.flexslideshow.flexmain #slider .slides {height: auto; max-height: 300px; min-height:150px; width:100%; }
+	.flexslideshow.flexmain #slider .slides li img {width: auto; display: block; min-height:150px;}
+	
+	.flexslideshow.flexmain #carousel .slides {width: 100%;}
+	.flexslideshow.flexmain #carousel .slides li { width: 25%;  }
+	.flexslideshow.flexmain #carousel .slides li img {width: 100%; }/**/
+	
+	.c25l.home-carousel-block, .c25r.home-carousel-block { display:block; float: none; width:100%; }
+	.home-carousel-block .padd10 { padding-bottom: 0px;}
+	
+	.page_margins.home .h-carousel {  display:block; margin:0; padding:5px;background-color:rgba(238, 238, 238,0.95);  border:1px solid #CCC; border-bottom:none; border-radius: 0px  !important; line-height:1; }
+	
+	
+	
+	.page-bit-left, 
+	.page-bit-right { display: block; clear:both; margin-bottom: 3px; padding-bottom: 5px; float:none; width:auto;}
+	
+	
+	
+	
+	
+	.ic_marquee { display: none;}
+	
+}
+
+@media only screen  and (min-width: 901px) 
+{
+	#top-menu-mob, #main-menu-mob, #quick-menu-mob { display:none; }
+	.uk-navbar-toggle {display:none; }
+
+}
+
+@media only screen  and (max-width: 1024px) 
+{
+	#nav_link_home { display:inline; }
+	#nav_link_home_fa { display: none;}
+	.sf-menu { display:none; }
+	.uk-navbar-toggle {display:block !important; text-align:right;}
+	
+	.header_logo { width: 80% !important; display:inline !important;  }
+	.header_links{ width: 20% !important; display:inline !important;  }
+	.logo_wrap { margin-left: 0px; } 
+}
+
+@media only screen  and (max-width: 900px) 
+{
+    div[class*="col-md"] { /*float: none;*/ width: 100% !important; margin:0; display:block !important;  } 	
+    div[class*="col-md"].header_logo { width: 80% !important; display:inline !important;  }
+	div[class*="col-md"].header_links{ width: 20% !important; display:inline !important;  }
+    
+    
+	/*767px*/ 
+	div[class^="c20"],
+	div[class^="c25"],
+	div[class^="c28"],
+	div[class^="c30"],	
+	div[class^="c38"],
+	div[class^="c44"],
+	div[class^="c50"],
+	div[class^="c55"],
+	div[class^="c62"],
+	div[class^="c70"],
+	div[class^="c72"],
+	div[class^="c75"],
+	.col1, .col2, .col3	
+	{ float: none; width: 100%; margin:0; display:block; padding:0;/**/ } 
+	
+	
+	.header_one div[class^="c50"], .header_one div[class^="c25"] { width: 50%; float:left;  }
+	.header_one div#google_translate_element { display: none;  }
+	
+	.col_cont, .col_contl, .col_contr, .col_gutsl { padding: 0 0.8em; }
+	
+	.search-block { margin: 0; }	
+	.search-block #search-bar { float:none; display:block; padding:0;}
+	.search-block .searchform input[type=search] {width: 100%;}
+	.search-label {display: none; }
+	
+	.nav_foot_col, .nav_foot_col ul { display: block; float:none; clear:both;}
+	.nav_foot_col ul li { float:left; display: inline; }
+	.nav_foot_col ul li a:after { content:"."; display:inline; }
+	.nav_foot_sml {display: none;}
+	
+	.logo_box_label h1 { font-size:17px; }   
+	
+	
+}
+
+/*  Phone  : 480px */
+@media only screen and (max-width: 767px) and (min-width: 480px){
+	ul.equipment-column li,
+	ul.gallery-column li,
+	ul.menu-column li { width: 50%; }
+}
+
+/*  Misc  : *** */
+@media only screen and (max-width: 700px) {
+	/*html { font-size: 75%; }*/
+	.head-main-nav .c83l, .head-main-nav .c16r  {  float: none; width: 100%; display:block; }
+	.head-main-nav .c16r { display: none; }	
+	div[class^="c33"], div[class^="c66"], div[class^="c38"], div[class^="c62"] { float: none; width: 100%; display:block; }
+	
+	
+	
+}
+
+/* Phone  : 320px */
+@media only screen and (max-width: 479px){
+	.logo_box_label h1 { font-size:15px; }   
+	
+	ul.equipment-column li,
+	ul.gallery-column li,
+	ul.menu-column li { float: none; width: 100%; display:block; }
+	ul.menu-column li div.block .carChopa,
+	ul.menu-column li div.block .carChopa img  { height:130px; width: 130px; }
+
+
+
+/* ----------------------------------------------------------------------------------------------
+ New mobile edits for Maarifa center - Kevin 5th March 2018
+ ------------------------------------------------------------------------------------------------ */
+
+
+.home-tiles:last-child {
+    margin-bottom: 8px;
+}
+
+.home-tiles {
+    height: 130px;
+    padding: 10px;
+    clear: both;
+    margin-top: 1%;
+}
+
+.home-tiles a{
+	font-size: 100% !important;
+}
+
+.bxslider-news {
+    font-size: 80%;
+}
+
+/*main.tiles-container.padded-x-2X {
+    margin-top: 370px;
+}*/
+.lh{
+	line-height: 1.1 !important;
+	font-size:100%;
+}
+
+
+
+
+
+
+ /* ----------------------------------------------------------------------------------------------
+ New mobile edits for Maarifa center - Kevin 5th March 2018
+ ------------------------------------------------------------------------------------------------ */
+
+}
+
+
+ /* ----------------------------------------------------------------------------------------------
+ New ipad edits for Maarifa center - Kevin 5th March 2018
+ ------------------------------------------------------------------------------------------------ */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+
+
+
+/*#banner {
+    background: url(../image/gallery/wildebeast.jpg);
+    background-size: cover;
+    min-height: 1050px !important;
+}*/
+
+
+
+.home-tiles:last-child {
+    margin-bottom: 8px;
+}
+
+.home-tiles {
+    height: 130px;
+    padding: 10px;
+    clear: both;
+    margin-top: 1%;
+}
+
+.home-tiles a{
+	font-size: 100% !important;
+}
+
+.bxslider-news {
+    font-size: 80%;
+}
+
+
+.lh{
+	line-height: 1.4 !important;
+	font-size:100%;
+}
+
+.ipadFull{
+	width: 100% !important;
+}
+
+.ipad50:first-child{
+	width:49% !important;
+}
+.ipad50{
+	width:49% !important;
+	margin-left:1% !important;
+	float: left;
+}
+
+.ipadMg_t{
+	margin-top:2%;
+}
+
+.col-md-1.col-xs-12.col-lg-1.qQ {
+    /*width: 30%;
+    margin: 1% 34%;*/
+    text-align: center;
+}
+
+.padd15_l.padd5_tx {
+    padding-left: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+/* ----------------------------------------------------------------------------------------------
+ New ipad edits for Maarifa center - Kevin 5th March 2018
+ ------------------------------------------------------------------------------------------------ */
+
+
+
+@media only screen 
+/*and (min-device-width : 768px) */
+and (max-device-width : 1200px)  { 
+    main.tiles-container.padded-x-2X {
+        margin-top: 15% /*370px*/;
+    }
+}
+
+
+
+@media only screen and (max-device-width : 768px) 
+/*and (max-device-width : 1200px)*/  { 
+    
+    #banner,
+    main.tiles-container {
+        clear: both !important;
+        height: auto !important;
+    }
+    
+    main.tiles-container .col-md-4 {
+        width: 100% !important; 
+        /*float: left !important;*/
+    }
+    
+    main.tiles-container .col-md-6 {
+        width: 50% !important; 
+        float: left !important;
+    }
+    
+    main.tiles-container .home-tiles {
+        font-size: 13px !important; 
+        margin-bottom: 10px;
+    }
+    
+    main.tiles-container .mobile-hide {
+        display: none;
+    }
+    
+    main.tiles-container .cards-banner-left,
+    main.tiles-container .cards-banner-right {
+        clear:both !important;
+        float: none !important;
+        display: block !important;
+    }
+    
+    input.mdgov_searchInputStart.mdgov_home {
+        height: 34px !important;
+        font-size: 14px !important;
+    }
+    
+    #mastWrap {
+           margin-right: 3% !important;
+        margin-left: 3%  !important;
+    }
+    
+    
+    .header_logo { width: 80% !important; display:inline !important; clear:none !important; float: left !important; }
+	.header_links{ width: 20% !important; display:inline !important; clear:none !important; float: right !important;  }
+}

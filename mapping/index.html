@@ -1,0 +1,166 @@
+<html>
+<head>
+  <title> National Projects </title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=""/>
+
+   <link rel="stylesheet" href="libs/leaflet-search.css"/>
+
+   <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+    integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+    crossorigin=""></script>
+
+  <script src="libs/leaflet-search.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <style type="text/css">
+    #map {width: 100%/*800px*/; height: 100% /*500px*/;}
+    .info {
+      padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8);box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px;
+          }
+    .info h4 {
+      margin:0 0 5px; color: #777;
+            }
+    #mapChange {margin: 0 0 5px 0; padding: 0; font-size: 16px;}
+ </style>
+</head>
+
+<body>
+
+  <select id="mapChange">
+    <option value="natProjects"> All National Projects Map </option>
+    <option value="climSmart"> Climate Smart Project Map </option>
+    <option value="agroGrowth"> Agriculture/Rural Growth Map </option>
+    <option value="agroClim"> Agriculture & Climate Smart Map</option>
+  </select>
+
+  <div id="map"></div>
+  <script src="data/county_cog.geojson"></script>
+
+  <script type="text/javascript">
+
+  function style(feature) {
+    return {
+      fillColor:'#fdbf6f', //#efa749, #fdbf6f, #ff99ff
+      weight: 2, opacity:1, color:'white', dashArray:'5', fillOpacity:0.5
+    };
+  }
+
+  function highlightFeature(e){
+    var layer = e.target;
+    layer.setStyle({
+      weight:5, color: 'orange', dashArray: '', fillOpacity:0.7
+    });
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge){
+      layer.bringToFront();
+    }
+    info.update(layer.feature.properties);
+  }
+
+  function resetHighlight(e){
+    geojson.resetStyle(e.target);
+    info.update();
+  }
+
+  function zoomToFeature(e){
+    map.fitBounds(e.target.getBounds());
+  }
+
+  function onEachFeature(feature, layer){
+    layer.on({
+      mouseover: highlightFeature,
+      mouseout: resetHighlight,
+      click: zoomToFeature
+    });
+  }
+
+  var map = L.map('map').setView([0.439765, 37.886837], 6)
+  map.fitBounds(map.getBounds());
+
+  var geojson = L.geoJson(countyProjects, {
+    style: style, onEachFeature:onEachFeature
+  });
+
+  var climLayer = L.geoJson(countyProjects, {style: style, onEachFeature:onEachFeature,
+    filter: function(feature, layer){
+    return feature.properties.ProjectName == "Kenya Climate smart Agriculture project ";
+  }});
+
+  var agroLayer = L.geoJson(countyProjects, {style:style, onEachFeature:onEachFeature,
+    filter: function(feature, layer){
+    return feature.properties.ProjectName == "National agriculture and rural growth inclusive project";
+  }});
+  //try mapbox.satellite, mapbox.light
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoiYm1pdHRvIiwiYSI6ImNqZHgzdWFtZTBmejUzM3AwaG1rZjRyMTMifQ.rwT5EXzQkDsAuX0_1EWYvg'}).addTo(map);
+
+  var info = L.control();
+
+  info.onAdd = function (map){
+    this._div = L.DomUtil.create('div', 'info');
+    this.update();
+    return this._div;
+  };
+
+  info.update = function (props){
+    this._div.innerHTML = '<h4> Project Name </h4>' + (props ?
+    '<b>' + props.county + '</b><br/>' + '<b>' + props.ProjectName + '</b><br/>': 'Hover over a County');
+  };
+  info.addTo(map);
+
+ var searchControl = new L.Control.Search({
+   layer: geojson,
+   propertyName: 'county',
+   marker: false,
+   moveToLocation: function (latlng, title, map){
+     var zoom = map.getBoundsZoom(latlng.layer.getBounds());
+     map.setView(latlng, zoom);
+   }
+ });
+
+ searchControl.on('search:locationfound', function(e){
+   e.layer.setStyle({fillColor: '#3f0', color: '#0f0'});
+   if (e.layer._popup)
+        e.layer.openPopup();
+ }).on('search:collapsed', function(e){
+   geojson.eachLayer(function(layer){
+     geojson.resetStyle(layer);
+   });
+ });
+searchControl.addTo(map);
+
+$('#mapChange').change(function(){
+  var val = this.value;
+  if (val == "climSmart") {
+    map.addLayer(climLayer);
+    map.removeLayer(geojson);
+    map.removeLayer(agroLayer);
+
+
+  } else if (val == "agroGrowth") {
+    map.addLayer(agroLayer);
+    map.removeLayer(geojson);
+    map.removeLayer(climLayer);
+
+  } else if (val == 'natProjects'){
+    map.addLayer(geojson);
+    map.removeLayer(climLayer);
+    map.removeLayer(agroLayer);
+
+  }
+  else if (val == "agroClim") {
+    map.addLayer(climLayer);
+    map.addLayer(agroLayer);
+    map.removeLayer(geojson);
+
+  }
+});
+
+  </script>
+  <script type="text/javascript" src="libs/labs-common.js"></script>
+</body>
+</html

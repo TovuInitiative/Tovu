@@ -1,0 +1,112 @@
+/*@import "../../../../styles/style.css";*/
+/*
+ * FCKeditor - The text editor for Internet - http://www.fckeditor.net
+ * Copyright (C) 2003-2007 Frederico Caldeira Knabben
+ *
+ * == BEGIN LICENSE ==
+ *
+ * Licensed under the terms of any of the following licenses at your
+ * choice:
+ *
+ *  - GNU General Public License Version 2 or later (the "GPL")
+ *    http://www.gnu.org/licenses/gpl.html
+ *
+ *  - GNU Lesser General Public License Version 2.1 or later (the "LGPL")
+ *    http://www.gnu.org/licenses/lgpl.html
+ *
+ *  - Mozilla Public License Version 1.1 or later (the "MPL")
+ *    http://www.mozilla.org/MPL/MPL-1.1.html
+ *
+ * == END LICENSE ==
+ *
+ * This is the default CSS file used by the editor area. It defines the
+ * initial font of the editor and background color.
+ *
+ * A user can configure the editor to use another CSS file. Just change
+ * the value of the FCKConfig.EditorAreaCSS key in the configuration
+ * file.
+ */
+
+/*
+    The "body" styles should match your editor web site, mainly regarding
+    background color and font family and size.
+*/
+
+body
+{
+	margin:5px;
+	padding:0;
+	background-color: #FFFFFF;
+	color:#636563;
+	font: 90%/180% arial, sans-serif;
+}
+
+/*html,body,div,span {
+ border:0;
+ font-weight:inherit;
+ font-style:inherit;
+ vertical-align:baseline;
+ list-style:none;
+ color:#473B38;
+}
+
+ h1, h2, h3, h4, h5 {color:#FF0000;}
+ 
+ h1 { font-size:170%;} h2 { font-size:150%;}  h3 { font-size:130%;}  h4, h5 { font-size:110%;}
+ 
+ h3.hleft {background:url(../image/fm_blu_t.jpg) repeat-x; height:20px; padding-left:10px; padding-top:4px; color:#000000;}
+
+td {vertical-align:top; text-align:left;}
+
+a, a[href] {color:#390; text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+a, a img, img { border:0px solid; }*/
+
+
+/*
+	Just uncomment the following block if you want to avoid spaces between
+	paragraphs. Remember to apply the same style in your output front end page.
+*/
+
+/*
+p, ul, li
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+*/
+
+/*
+    The following are some sample styles used in the "Styles" toolbar command.
+    You should instead remove them, and include the styles used by the site
+    you are using the editor in.
+*/
+
+
+.content_highlight {
+	font-style:oblique;
+}
+
+
+.Bold
+{
+	font-weight: bold;
+}
+
+.Title
+{
+	font-weight: bold;
+	font-size: 18px;
+	color: #cc3300;
+}
+
+.Code
+{
+	border: #8b4513 1px solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	color: #000066;
+	font-family: 'Courier New' , Monospace;
+	background-color: #ff9933;
+}

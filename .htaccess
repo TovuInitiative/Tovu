@@ -1,0 +1,24 @@
+#DirectoryIndex index.php
+
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymLinks -Indexes
+Options +SymLinksIfOwnerMatch -Indexes
+# disable the Apache MultiViews directive if it is enabled on the server. It plays havoc with URL rewriting
+Options -MultiViews
+RewriteEngine On
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ index.php?com=$1 [L,QSA]
+
+#RewriteCond %{REQUEST_URI} !^/?(sysman|sysadm|google71fc6c1ec4da5d35.html)(/?)
+RewriteRule ^([a-zA-Z0-9-]+)(/?)$ index.php?com=$1 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-]+)\.htm(l?)$ index.php?com=$1 [L,QSA]
+
+RewriteRule ^([0-9-]+)/([a-zA-Z0-9-]+)(/?)$ index.php?item=$1&com2=$2 [L,QSA]
+RewriteRule ^([0-9-]+)/([a-zA-Z0-9-]+)\.htm(l?)$ index.php?item=$1&com2=$2 [L,QSA]
+
+RewriteRule ^(resource)/([a-zA-Z0-9-]+)(/?)$ index.php?com=$1&dc=$2 [L,QSA]
+RewriteRule ^(resource)/([a-zA-Z0-9-]+)\.htm(l?)$ index.php?com=$1&dc=$2 [L,QSA]

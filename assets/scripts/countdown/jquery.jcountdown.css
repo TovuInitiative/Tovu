@@ -1,0 +1,89 @@
+/* jQuery Countdown styles 1.5.11. */
+.hasCountdown {
+	/*border: 1px solid #fff; background-color: #eee;*/
+	cursor:pointer;	
+}
+.countdown_rtl {
+	direction: rtl;
+}
+.countdown_holding span {
+	background-color: #fff;
+}
+.countdown_row {
+	clear: both;
+	width: 100%;
+	padding: 0px 2px;
+	text-align: center;
+}
+.countdown_show1 .countdown_section {
+	width: 90%;
+}
+.countdown_show2 .countdown_section {
+	width: 45%;
+}
+.countdown_show3 .countdown_section {
+	width: 29.5%;
+}
+.countdown_show4 .countdown_section {
+	width: 24%/*21.5%*/;
+}
+.countdown_show5 .countdown_section {
+	width: 17.5%/*19.5%*/;
+}
+.countdown_show6 .countdown_section {
+	width: 16.25%;
+}
+.countdown_show7 .countdown_section {
+	width: 14%;
+}
+.countdown_section {
+	display: block;
+	float: left;
+	font-size: 13px;
+	text-align: center;
+	/* rage */
+	border: 0px solid #ccc;
+	text-transform:uppercase;
+	margin:0px;
+	color:#FFF;
+	padding: 0;
+}
+.countdown_amount {
+	font-size: 40px;
+	font-weight:bold;
+	line-height:45px;
+	color:#FFF;
+	/*border: 1px solid #5A5D5D;background: #5A5D5D;*/
+	padding:0px 3px 0px;
+	display:block;
+	opacity: 1;
+	-moz-border-radius: 5px !important; 
+	-khtml-border-radius: 5px !important; 
+	-webkit-border-radius: 5px !important; 
+	border-radius: 5px !important; 
+}
+
+.countdown_descr {
+	display: block;
+	width: 100%;
+}
+
+#defaultCountdown { width: 300px; height: 45px; margin:5px; }
+
+/*
+#box_announce .hasCountdown {border: 1px solid #5A5D5D; background-color: #5A5D5D; height:45px; padding:2px 0 2px 15px; -moz-border-radius: 5px !important; -khtml-border-radius: 5px !important; -webkit-border-radius: 5px !important; border-radius: 5px !important;  }
+#box_announce #defaultCountdown { width: 170px; height:40px; margin:0; }
+#box_announce .countdown_amount { background: none; border: 0px dotted #E9F3DD;  padding:0px 2px 2px;font-size: 19px; line-height:normal; }
+#box_announce .countdown_section { margin-right: 1px; font-size: 8px !important; color:#FFFFFF; }*/
+
+p.time{
+color:#c21017;
+text-align: center;
+}
+
+
+p.time .cd-time{
+display:inline;
+color:#222222;
+font-size:0.8em;
+}

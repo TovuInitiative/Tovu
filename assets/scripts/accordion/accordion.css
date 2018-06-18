@@ -1,0 +1,524 @@
+#otherlinks {
+	width: 100%;
+	margin-bottom: 0px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #000000;
+	float: left;
+	margin-top: 20px;
+}
+#otherlinks .olwrap {
+	width: 975px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+}
+#otherlinks .olink {
+	width: 960px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	background-image: url(../images/otherlinksplus.png);
+	height: 22px;
+	padding-top: 3px;
+}
+#otherlinks ul.accmenu, ul.accmenu ul {
+	list-style-type:none;
+}
+
+#otherlinks ul.accmenu li {
+
+}
+
+#otherlinks ul.accmenu li a.jj {
+	color: #fff;
+	background-color: #333;
+	display: block;
+}
+
+#otherlinks ul.accmenu li a.jj:hover {
+	background: #E31C24;
+}
+#otherlinks ul.accmenu li a.jj.active {
+	background-color: #E31C24;
+}
+.acitem {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left:0;
+	margin-left:0;
+}
+
+#otherlinks .olbtm {
+	width: 975px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+}
+#otherlinks h2 {
+	font-size: 18px;
+	color: #FFFFFF;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #4d4d4d;
+	padding-left: 5px;
+}
+
+
+#otherlinks .glinks {
+	float: left;
+	width: 440px;
+	height: 236px;
+	position: relative;
+	margin-right: 30px;
+}
+#otherlinks .glinks a {
+	display: inline;
+	background-color: #000000;
+	margin: 0px;
+	padding: 0px;
+	color: #808080;
+	font-size: 11px;
+	line-height: 1.3px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#otherlinks .mlinks {
+	float: left;
+	width: 225px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+#otherlinks .mlinks a {
+	background-color: #000000;
+	margin: 0px;
+	color: #808080;
+	font-size: small;
+	font-family: Arial, Helvetica, sans-serif;
+	float: left;
+	width: 215px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+
+
+#projectaccordion .table li{
+display: block;
+list-style: disc outside;
+clear:both;
+}
+#projectaccordion .table span{
+float: left;
+margin-bottom: 5px;
+}
+
+#projectaccordion {
+	width: 90%;
+	padding-bottom: 5px;
+	font-size: 12px;
+}
+
+#projectaccordion ul.accmenu, ul.accmenu ul, ul.accmenu li {
+	list-style-type:none;
+}
+
+#projectaccordion ul.accmenu li {
+	margin-bottom: 5px !important; width: 100%;
+	float: left;
+}
+
+#projectaccordion ul.accmenu li ul,
+#projectaccordion ul.accmenu li ul li {
+	margin:0; padding: 0; list-style-type:none; float:none; display:block; clear:none;
+}
+
+#projectaccordion ul.accmenu li a {
+	background-color: #C6CFD6;
+	display: block;
+	background-image: url(../../image/layout/accordion-project.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	float: left;
+	width: 100%/*675px*/;
+	padding-left: 25px;
+	padding-right: 50px;
+	color: #333;
+	min-height: 34px;
+	padding-top: 8px;
+}
+
+#projectaccordion ul.accmenu li a:hover {
+	/*color: #000;*/
+}
+#projectaccordion ul.accmenu a.active {
+	background-color: #496068;
+	color: #FFF;
+	background-image: url(../../image/layout/arrow-accordion-on.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+
+/*#projectaccordion .table {
+	float: left;
+	width: 100%;
+	margin-bottom: 3px;
+	padding:5px;
+}
+#projectaccordion .td {
+	color: #FFF;
+	background-color: #7C8589;
+	float: left;
+	width: 20%;
+	margin-left:0 ;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	text-align: right;
+}
+#projectaccordion .tr {
+	float: right;
+	width: 78%;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+#projectaccordion .acitem {
+	float: left;
+}*/
+
+
+
+
+
+
+
+#pillaraccordion {
+	/* float: left; */
+	width: 100% /* 870px */;
+	font-size: 12px;
+	margin: 0;
+	padding: 0px;
+	border:3px solid #FAFAFA;
+	/*background-image: url(../../image/layout/bg-fpwrap.png);
+	background-position: 65px -5px;
+	background-repeat: no-repeat;*/
+}
+#pillaraccordion h4 {
+	font-size: 22px;
+	color: #FFF;
+	display:block;
+}
+
+
+#pillaraccordion ul.accmenu,
+#pillaraccordion ul.accmenu li {
+	padding:0; margin:0;
+}
+
+#pillaraccordion ul.accmenu, ul.accmenu ul {
+	list-style-type:none; 
+}
+
+#pillaraccordion  ul.accmenu li {
+	float: left;
+	width: 100%;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+}
+
+#pillaraccordion  ul.accmenu li a.paccor {
+	background-color: #C6CFD6;
+	display: block;
+	background-image: url(../../image/layout/accordion-pillar.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	width: 100%;
+	padding-left: 25px;
+	color: #333;
+	min-height: 34px;
+	padding-top: 8px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.8em;
+}
+
+#pillaraccordion  ul.accmenu li a.paccor:hover {
+	color: #000;
+}
+#pillaraccordion  ul.accmenu li a.paccor.active {
+	background-color: #496068;
+	color: #FFF;
+	background-image: url(../../image/layout/arrow-accordion-on.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+
+
+
+
+#pillaraccordion  .acitem {
+	display: block;
+	position:relative;
+	padding: 10px 15px;
+}
+
+
+#pillaraccordion .acitem .td {
+	color: #FFF;
+	background-color: #7C8589;
+	float: left;
+	width: 136px;
+	margin: 0px;
+	font-weight: bold;
+	text-align: right;
+	min-height: 90px;
+	padding-top: 55px;
+	padding-right: 10px;
+	display:inline-block;
+}
+
+#pillaraccordion  .td a{
+	color: #333;
+	background-color: none;
+}
+
+#pillaraccordion .acitem .table {
+	margin-bottom: 15px;
+	width:auto;
+	border-left: 150px solid #7C8589 !important;
+	display:block;
+}
+
+#pillaraccordion .acitem .table .tr {
+	width: 98%;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	margin-left: 5px;
+}
+#pillaraccordion .acitem .table .tr a{
+	color: #333;
+	background-color: none;
+}
+
+#pillaraccordion .acitem .table .tr:nth-child(even) {background: #f9f9f9;  }
+#pillaraccordion .acitem .table .tr:nth-child(odd) {background: #F1F1F1;}
+
+
+
+
+
+#pillarmap {
+	float: left;
+	width: 980px;
+	margin-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#pillarmap h1 {
+	color: #FFF;
+	background-color: #2F4449;
+	float: left;
+	height: 30px;
+	width: 686px;
+	font-size: 24px;
+	padding-left: 14px;
+	padding-top: 14px;
+}
+#pillarmap .viewall {
+	background-color: #2F4449;
+	float: left;
+	height: 34px;
+	width: 266px;
+	padding-top: 10px;
+	padding-right: 14px;
+}
+#pillarmap .viewall a {
+	color: #FFF;
+	background-color: #E31C24;
+	float: right;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+}
+
+
+
+#pillarmaplinks {
+	float: left;
+	width: 255px;
+	font-size: 12px;
+	background-color: #2F4449;
+	padding-left: 14px;
+	padding-bottom: 10px;
+}
+#pillarmaplinks h4 {
+	font-size: 22px;
+	color: #FFF;
+}
+
+
+
+#pillarmaplinks ul.accmenu, ul.accmenu ul {
+	list-style-type:none;
+}
+
+#pillarmaplinks  ul.accmenu li {
+	float: left;
+}
+
+#pillarmaplinks  ul.accmenu li a.e {
+	display: block;
+	float: left;
+	width: 155px;
+	color: #2F4449;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.8em;
+	padding-left: 50px;
+	background-image: url(../images/maps-e.gif);
+	background-repeat: no-repeat;
+	height: 25px;
+	padding-right: 50px;
+	padding-top: 18px;
+}
+
+#pillarmaplinks  ul.accmenu li a:hover {
+	color: #FFF;
+
+}
+#pillarmaplinks  ul.accmenu a.e.active {
+	background-image: url(../images/maps-e-over.gif);
+	background-repeat: no-repeat;
+}
+#pillarmaplinks  ul.accmenu li a.s {
+	display: block;
+	float: left;
+	width: 155px;
+	color: #2F4449;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.8em;
+	padding-left: 50px;
+	background-image: url(../images/maps-s.gif);
+	background-repeat: no-repeat;
+	height: 25px;
+	padding-right: 50px;
+	padding-top: 18px;
+}
+#pillarmaplinks  ul.accmenu a.s.active {
+	background-image: url(../images/maps-s-over.gif);
+	background-repeat: no-repeat;
+}
+#pillarmaplinks  ul.accmenu li a.p {
+	display: block;
+	float: left;
+	width: 155px;
+	color: #2F4449;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.8em;
+	padding-left: 50px;
+	background-image: url(../images/maps-p.gif);
+	background-repeat: no-repeat;
+	height: 25px;
+	padding-right: 50px;
+	padding-top: 18px;
+}
+#pillarmaplinks  ul.accmenu a.p.active {
+	background-image: url(../images/maps-p-over.gif);
+	background-repeat: no-repeat;
+}
+#pillarmaplinks  ul.accmenu li a.em {
+	display: block;
+	float: left;
+	width: 135px;
+	color: #2F4449;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.8em;
+	padding-left: 50px;
+	background-image: url(../images/maps-em.gif);
+	background-repeat: no-repeat;
+	height: 57px;
+	padding-right: 70px;
+	padding-top: 18px;
+}
+#pillarmaplinks  ul.accmenu a.em.active {
+	background-image: url(../images/maps-em-over.gif);
+	background-repeat: no-repeat;
+}
+#pillarmaplinks  .table {
+	float: left;
+	width: 679px;
+	margin-bottom: 3px;
+}
+#pillaraccordion  .td {
+	color: #FFF;
+	background-color: #7C8589;
+	float: left;
+	width: 136px;
+	margin-left: 45px;
+	font-weight: bold;
+	text-align: right;
+	height: 90px;
+	padding-top: 55px;
+	padding-right: 10px;
+}
+#pillarmaplinks  .tr {
+	float: left;
+	width: 615px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	margin-left: 5px;
+}
+#pillarmaplinks  .acitem {
+	float: left;
+	background-color: #2F4449;
+}
+#pillarmaplinks ul li ul li {
+	float: left;
+	width: 205px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	padding-left: 50px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+}
+#pillarmaplinks ul li ul li a{
+	font-size: 14px;
+	font-weight: normal;
+	color: #FFF;
+	background-color: #2F4449;
+}
+#pillarmap .actualmap {
+	float: left;
+	width: 680px;
+	background-color: #2F4449;
+	height: 514px;
+	padding-left: 17px;
+	padding-right: 14px;
+	padding-bottom: 20px;
+}

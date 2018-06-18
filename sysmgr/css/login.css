@@ -1,0 +1,203 @@
+/*@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700";*/
+
+html,body{
+    width: 100%;
+    background: #fff;
+    color: #fff;
+}
+body{
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-top:10%;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    margin:0px;
+    overflow: auto;
+}
+body.register{
+    padding-top:5%;
+    position: relative;
+}
+body.forget-password{
+    padding-top:10%;
+}
+
+
+
+.login-container{
+    display: block;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #f3ecec;
+}
+
+.user-credentials{
+    display: block;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.login-header{
+    text-align: center; padding: 5px;
+}
+.login-header > h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.login-content{
+    padding: 20px;
+}
+
+.smart-title{
+    display: block;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 5px;
+	font-size: 17px;
+}
+
+.form-control {
+    background-color: #fbfbfb;
+    background-image: none;
+    border: 1px solid rgba(197, 191, 191, 0.7);
+}
+.login-btn-container{
+    text-align: center;
+}
+.login-btn-container>.btn{
+    width: 250px;
+}
+.login-footer{
+    padding: 10px 20px;
+}
+a{
+    color: #ecccb6;
+}
+
+a:hover, a:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/*
+message
+*/
+div.message {
+  padding: 15px;
+  margin-bottom: 21px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  color:#fff !important;
+  text-align: center;
+}
+
+div.message.error {
+  background-color: #d9534f;
+  border-color: transparent;
+  color: #ebebeb;
+}
+div.message.error hr {
+  border-top-color: rgba(0, 0, 0, 0);
+}
+
+div.message.success {
+  background-color: #5cb85c;
+  border-color: transparent;
+  color: #fff;
+}
+div.message.success hr {
+  border-top-color: rgba(0, 0, 0, 0);
+}
+
+/* ===============================================
+Baclground Images
+==================================================*/
+@media (min-width: 320px) and (max-width: 732px) {
+     body{
+		background: url(../img/hero.jpg) no-repeat center center fixed;
+	  	-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+		background-color: #fff;
+	}
+}
+
+@media (min-width: 733px) and (max-width: 1023px) {
+     body{
+		background: url(../img/hero.jpg) no-repeat center center fixed;
+	  	-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+		background-color: #fff;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1360px) {
+     body{
+		background: url(../img/hero.jpg) no-repeat center center fixed;
+	  	-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+		background-color: #fff;
+	}
+}
+
+@media (min-width: 1361px) and (max-width: 1920px) {
+     body{
+		background: url(../img/hero.jpg) no-repeat center center fixed;
+	  	-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+		background-color: #fff;
+	}
+}
+
+@media (min-width: 1921px) {
+     body{
+		background: url(../img/hero.jpg) no-repeat center center fixed;
+	  	-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+		background-color: #fff;
+	}
+}
+
+.texture-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/grid.png);
+}
+
+.has-error .help-block{
+    background: #fff;
+    padding: 2px;
+}
+
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label, .has-error .form-control-feedback {
+    color: #fb2822;
+}
+
+
+.has-success .form-control, .has-success .form-control:focus {
+    border: 2px solid #5cb85c;
+}
+
+.has-error .form-control, .has-error .form-control:focus {
+    border: 2px solid #d9534f;
+}
+/*
+.has-error .form-control, .has-error .form-control:focus {
+    border: 4px solid #fff12e;
+}*/

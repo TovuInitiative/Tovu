@@ -1,0 +1,57 @@
+/*
+ * Timepicker stylesheet
+ * Highly inspired from datepicker
+ * FG - Nov 2010 - Web3R
+ *
+ * version 0.0.3 : Fixed some settings, more dynamic
+ * version 0.0.4 : Removed width:100% on tables
+ */
+
+.ui-timepicker-inline { display: inline; }
+
+#ui-timepicker-div { padding: 0.2em }
+.ui-timepicker-table { display: inline-table }
+.ui-timepicker-table table { margin:0.15em 0 0 0; border-collapse: collapse; }
+
+.ui-timepicker-hours, .ui-timepicker-minutes { padding: 0.2em;  }
+
+.ui-timepicker-table .ui-timepicker-title { line-height: 1.8em; text-align: center; }
+.ui-timepicker-table td { padding: 0.1em; width: 2.2em; }
+.ui-timepicker-table th.periods { padding: 0.1em; width: 2.2em; }
+
+/* span for disabled cells */
+.ui-timepicker-table td span {
+	display:block;
+    padding:0.2em 0.3em 0.2em 0.5em;
+    /*width: 1.2em;*/
+
+    text-align:right;
+    text-decoration:none;
+}
+/* anchors for clickable cells */
+.ui-timepicker-table td a {
+    display:block;
+    padding:0.2em 0.3em 0.2em 0.5em;
+    /*width: 1.2em;*/
+
+    text-align:right;
+    text-decoration:none;
+}
+
+.timePick { 
+	
+	min-width: 120px !important; 
+	max-width: 180px !important; 
+    margin-right: 3px;
+    background: url(icon_clock.gif) no-repeat  96% 50% transparent !important;/**/
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #d3d3d3; background: #e6e6e6; font-weight: normal; color: #555555; font-size:95%; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #555555; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #999999; background: #dadada; font-weight: normal; color: #212121; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #212121; text-decoration: none; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 1px solid #aaaaaa; background: #ffffff; font-weight: normal; color: #212121; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #212121; text-decoration: none; }
+.ui-widget :active { outline: none; }

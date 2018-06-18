@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* @ Profile Avatar */
+
+.avatar-wrap {
+	display: inline-block;
+    border: 3px solid #f0f0f0;
+    box-shadow: 0 0px 0px #999999;
+    overflow: hidden;
+    margin: 0 0px 10px 0;
+    max-height: 200px;
+	width:100%; /*max-width:250px; */
+}
+
+.avatar-wrap img {
+	width: 100% ; max-height:200px; 
+}

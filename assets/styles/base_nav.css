@@ -1,0 +1,328 @@
+@charset "utf-8";
+
+@media screen, projection
+{
+.sf-menu, .sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sf-menu li {
+	position: relative;
+}
+.sf-menu ul {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 99;
+}
+.sf-menu > li {
+	float: left;
+}
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+	display: block;
+}
+
+.sf-menu a {
+	display: block; position: relative; height: 40px; line-height: 40px; /*padding: 0em 1.05em;*/
+}
+.sf-menu li ul a {
+	height: auto; line-height: 1.5; padding: .25em 1.05em;
+}	
+.sf-menu ul ul {
+	top: 0;
+	left: 100%;
+}
+
+
+/*** DEMO SKIN ***/
+.sf-menu {
+	float: left;
+	margin-bottom: 0em;
+}
+.sf-menu-right {
+	float: right;
+	margin-bottom: 0em;
+}	
+.sf-menu ul {
+	box-shadow: 2px 2px 6px rgba(0,0,0,.2);
+	min-width: 12em; /* allow long menu items to determine submenu width */
+	*width: 12em; /* no auto sub width for IE7, see white-space comment below */
+}
+.sf-menu a {
+	border-left: 1px solid rgba(255,255,255,.5);
+	border-top: 0px solid #dFeEFF; /* fallback colour must use full shorthand */
+	border-top: 0px solid rgba(255,255,255,.5);
+	padding: 0em .55em;
+	text-decoration: none;
+	zoom: 1; /* IE7 */
+}
+.sf-menu, .sf-menu a {
+	color: #4a535e;
+}
+.sf-menu li {
+	/*white-space: nowrap; */
+	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
+	-webkit-transition: background .2s;
+	transition: background .2s;
+}
+.sf-menu ul li {
+	background: #FFFFFF;
+}
+.sf-menu ul ul li {/*background: #FFFFFF;*/}
+.sf-menu li:hover,
+.sf-menu li.sfHover {-webkit-transition: none;transition: none;}
+.sf-menu li ul li:hover { background: #F5F5F5; }    
+
+
+.sf-menu.sf-menu-main a {font-size: 17px; font-weight: 700; text-transform: uppercase; padding: 0em 1.25em; border: none; font-family: 'Open Sans Condensed', sans-serif; }
+.sf-menu.sf-menu-main li.sfHover/*, 
+.sf-menu.sf-menu-main a:hover*/ {border-bottom: 0px solid #FF9300; background: rgba(238,102,0, 0.15); } 	
+.sf-menu.sf-menu-main li li > label,    
+.sf-menu.sf-menu-main li li > a { font-size: 14px; font-weight: normal; text-transform: none; font-family: 'Open Sans', sans-serif;  }
+	
+.sf-menu.sf-menu-main a.current { color: #a31d23; }
+
+.sf-menu.sf-menu-main li ul { background:#FFF; min-width: 210px; padding-top: 0px; border: 1px solid #333333;border-top: 2px solid #FF9300;  }
+.sf-menu.sf-menu-main li ul li:hover { background: #F5F5F5; }
+.sf-menu.sf-menu-main li ul li.sfHover { border: none; }
+.sf-menu.sf-menu-main li ul li a { padding-top: .5em; padding-bottom: .5em;  }	
+.sf-menu.sf-menu-main li ul li a.current {  background: #F5F5F5; }
+	
+.sf-menu.sf-small { /*float: right;*/ }	
+.sf-menu.sf-small a { /*text-transform:uppercase;*/ font-weight:normal; color: #FFF; border: none;}
+.sf-menu.sf-small li.sfHover { /*background: #f8f8f8;*/ }
+.sf-menu.sf-small a.current { font-weight:500; }
+
+.sf-menu.sf-small li.nav-right ul {left: -100px !important; width: 180px; }
+.sf-menu.sf-small li ul { background:#FFF; min-width: 190px; padding-top: 10px; border: 1px solid #333333; }
+.sf-menu.sf-small li ul li:hover { background: #ECECEC; }
+.sf-menu.sf-small li ul li a { font-size: 12px; padding-top: .5em; padding-bottom: .5em; font-weight:normal; }
+
+    
+.sf-menu.nav a { text-transform:; font-weight:normal; border: none; font-size: 13px;}    
+.sf-menu.nav a:hover { background: none;}    
+.sf-menu.nav a.current { color: #a31d23; }    
+
+/* ============================================================================================= */
+/* @begin :: NAV_SF-MENU - DROP DOWN ARROWS (for all except IE7)
+/* --------------------------------------------------------------------------------------------- */
+
+ul.sf-arrows .sf-with-ul {
+	padding-right: 15px;
+	*padding-right: 15px; /* no CSS arrows for IE7 (lack pseudo-elements) */
+}
+
+ul.sf-arrows .sf-with-ul:after {
+	content: '';
+	position: absolute;
+	top: 75%;
+	/*bottom:0px;*/
+	right: 50%/*2px*/;
+	margin-top: 5px;
+	height: 0;
+	width: 0;
+	/* order of following 3 rules important for fallbacks to work */
+	border: 4px solid transparent;
+	border-top-color: #000000; /* edit this to suit design (no rgba in IE8) */
+}
+
+ul.sf-arrows > li > .sf-with-ul:focus:after,ul.sf-arrows > li:hover > .sf-with-ul:after,ul.sf-arrows > .sfHover > .sf-with-ul:after {border-top-color: #000; /* IE8 fallback colour */}
+/* styling for right-facing arrows */
+ul.sf-arrows ul .sf-with-ul:after {top: 55%;right: 5px;margin-top: -5px;margin-right: -3px;border-color: transparent;border-left-color: #000; }
+ul.sf-arrows ul li > .sf-with-ul:focus:after,ul.sf-arrows ul li:hover > .sf-with-ul:after,ul.sf-arrows ul .sfHover > .sf-with-ul:after {border-left-color: #000;}
+
+ul.sf-arrows li.current a.sf-with-ul:after,ul.sf-arrows a.current.sf-with-ul:after {border-top-color: #a31d23;}
+
+ul.sf-arrows li.current ul li > .sf-with-ul:after {border-color: transparent;border-left-color: #b2b2b2;}
+
+
+
+	
+.wrap_nav { background: #39bd00; }	
+.wrap_nav ul > li > a {text-transform: capitalize;}
+	
+
+
+
+/* ============================================================================================= */
+/* @begin :: MEGA-MENU
+/* --------------------------------------------------------------------------------------------- */
+.sf-menu ul.mega-menu,    
+.sf-menu ul.mega-menu.mega-sector {
+    /*left: auto;
+	right: 0;*/
+    width: 600px !important;
+    border-radius: 0;
+    margin-top: 0px;
+    left: auto; 
+    right: 0%;
+}
+
+.sf-menu ul.mega-menu li,
+.sf-menu ul.mega-menu.mega-sector li {
+	display: inline-block;
+	float: left;
+	width: 25%; margin: 0 !important;
+}    
+    
+    .sf-menu ul.mega-menu.mega-sector { /*width: 450px !important;*/ }    
+    .sf-menu ul.mega-menu.mega-sector li { width: 50%; display: inline-block; /*height: auto !important; position: relative;*/}
+    .sf-menu ul.mega-menu.mega-sector li label { /*overflow: hidden;*/ /*display: block; height: auto; width: auto !important; border: 1px solid;*/ }
+
+/* ============================================================================================= */
+/* @begin :: NAV_CRUMBS
+/* --------------------------------------------------------------------------------------------- */
+
+.breadcrumb {
+	background-color: #F3F3F3 /*#FFF9D8 #FFE9CC*/ ;
+	border:solid 1px #F2EBA2 ;
+	border-width:0px ;
+	border-radius:0px 0px 3px 3px;
+	margin-bottom: 0px;	
+	color: #999;
+	font-size: 90%;
+	line-height: 1.5;
+    padding: 3px 0px;
+}
+.breadcrumb a {display: inline-block; padding-left:0px; padding-right: 3px; text-decoration: none !important;}
+.breadcrumb a.last {}
+.breadcrumb a:hover {text-decoration:underline;}
+.breadcrumbpadd {padding: 8px 12px; border:0px solid;}
+
+
+/* ============================================================================================= */
+/* @begin :: NAV_SIDE
+/* --------------------------------------------------------------------------------------------- */
+
+.nav_side, 
+.nav_side li { list-style:none; padding:0; margin:0;}
+.nav_side { padding: 0px 0px 10px 0; }
+.nav_side li { border-bottom: 1px dotted #e5e5e5; padding-left:0px;  }
+.nav_side a { text-decoration:none; text-transform:capitalize; /*display:block;*/background: none; padding-left: 3px; 
+	/*overflow: hidden; text-overflow: ellipsis; white-space: nowrap;*/  }
+.nav_side a:hover { white-space:pre-line; overflow:visible; /*background: #F5F5F5;*/ }
+
+/*.nav_side li:hover {background:#F5CE69;}*/
+.nav_side li a.current {background:#f7d9a0; font-weight: bold; color: #000; }
+/*.nav_side li.current a { white-space:pre-line; overflow:visible; }*/
+.nav_side li.separator { height:3px;margin:0px 0;overflow:hidden;background-color:#e5e5e5}
+	
+.nav_side .nav_count { display: inline-block; float: right; background: #78cde2; border-radius: 0px; color: #fff; font-size: 11px; font-weight: normal; min-width: 19px; text-align: center; margin: 2px;  }	
+	
+	
+
+.nav_side.nav_profile a { text-transform: capitalize; font-size:inherit }
+.nav_side li ul { margin-bottom:0; padding-bottom:0;}
+
+#left-nav{ /*font-weight:bold;*/ }
+#left-nav a{ text-decoration:none; }
+#left-nav ul { margin:0; padding:0; list-style:none; }
+#left-nav li { list-style:none; vertical-align:top; margin:0; padding: 0px 0px 0px 8px; }
+
+#left-nav ul li a { font-size:105%; /*color:#669933;*/  }
+#left-nav ul li { border-bottom: 1px dashed #D7C5AC; }
+
+#left-nav ul li a.current,
+#left-nav ul li.expanded a ,
+#left-nav ul li ul li.selected a { color:#990000; }
+
+#left-nav ul li ul li a { color:#D7C5AC; font-size:97.75%;/**/ font-weight:normal;  }
+#left-nav ul li ul li { border-bottom:0px; border-top: 1px dotted #d7c5ac;  line-height:1.5;/**/  }
+
+.cat-items li a { display:block; position:relative; width:100%; line-height:30px;}
+.cat-items li a .cat-text {display:block; width:auto; border-right:36px solid #ADAB29; padding-right:10px; /*font-size:13px;*/ }
+.cat-items li a .cat-count {display:inline-block; width:35px; position:absolute; right:0px; top:0px; border:0px solid; text-align:center; color:#FFF; font-weight:normal; /*font-size:13px;*/ }
+
+.cat-items li a .cat-text.bg4 { border-color: rgb(227,6,19);}
+.cat-items li a .cat-text.bg3 { border-color: #009900;}
+.cat-items li a .cat-text.bg2 { border-color: #000;}
+
+/* ============================================================================================= */
+/* @begin :: NAV_DOWNLOADS_SIDE
+/* --------------------------------------------------------------------------------------------- */
+
+.nav_dloads,
+.cont_dloads {	border:0px solid #000; margin: 0px; padding: 0px 5px 0px 0;  }
+.nav_dloads a  { display:block; padding-top:0px; }
+.nav_dloads li { border: none;  border-bottom:1px dotted #D2D2D2; padding:0; list-style: none; margin:0 0 3px;}
+
+
+.cont_dloads li {	margin:0 0 10px; list-style: none;  }
+.cont_dloads li a { padding-top:2px !important; padding-bottom:3px !important; font-size: 15px;  }
+
+.nav_dloads > li:last-child,
+.cont_dloads > li:last-child { border-bottom: none; }
+
+.nav_dloads a ,
+.nav_side a {padding-bottom: 3px; line-height: 170%;}
+
+
+/* ============================================================================================= */
+/* @begin :: NAV_COLS_FOOT
+/* --------------------------------------------------------------------------------------------- */
+
+.nav_foot_col { display: inline-block; float:left;/**/ border:0px solid; width: 50%;/**/ }
+/*.nav_foot_col ul li a { color: #775B20; }*/
+.nav_foot_col ul { border:0px solid #F00 !important;}
+.nav_foot_col ul li { /*float:left; width: 50%; display:inline-block;*/border:0px solid #ccc !important;}
+
+/*.wrap_footer_guts a { color: #775B20; }*/
+h5.foot_col_header { font-size:17px; font-weight: 100 !important; color:  #BC4B10;}
+
+
+
+/* ============================================================================================= */
+/* @begin :: NAV_FOOT - LINE
+/* --------------------------------------------------------------------------------------------- */
+
+.nav_foot_sml { padding-right: 0px;}
+#nav_foot { float:right; margin:0 }
+#nav_foot, #nav_foot li { list-style:none;  list-style-type:none;}
+#nav_foot li { position: relative;float: left; padding:0; margin:0; }
+#nav_foot li a
+{ 	display: block;
+	background: none; 
+	padding: 2px 8px;
+	border-right: 0px solid #999999;
+	text-decoration: none;
+	margin:0;
+	color:#4a535e;
+    font-size: 13px;
+}
+
+#nav_foot li a:hover
+{	color: #a31d23;
+}
+
+#nav_foot > li:last-child a 
+{	padding-right: 0px; border: none;
+}
+
+
+
+
+
+/* ============================================================================================= */
+/* @begin :: BULLETS
+/* --------------------------------------------------------------------------------------------- */
+
+ul.bul-gry, ul.bul-gry.dark { border-top:0px solid #d7d7d7; margin:0; padding:0px;  }
+ul.bul-gry li,
+ul.bul-gry.dark li { list-style: none; list-style-image:url(../image/icons/arrow_blue.gif); border-bottom:0px dotted #d7d7d7;padding:0; margin:0; vertical-align:top; list-style-position:inside;}
+ul.bul-gry li a, ul.bul-gry.dark li a {}
+ul.bul-gry li a.current { /*list-style:none; margin-left:-20px; padding-bottom: 15px; border-bottom: none; list-style-position:outside*/ color: #C24D00; }
+ul.bul-gry.dark li { list-style: none; border-bottom:1px dotted #d7d7d7;padding:0; 
+/*margin:0 10px 0 0;*/ vertical-align:top; list-style-position:inside; 
+background: url(../image/icons/bullet.gif) no-repeat 0px 9px; padding: 2px 15px 2px 8px;}
+
+ul.bul-gry.dark li a { line-height:1;  text-decoration:none;}
+
+
+
+
+
+}
