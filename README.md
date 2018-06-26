@@ -7,7 +7,7 @@ The library has the capability to accept resource uploads in form of pdf, word, 
 
 ## How to install Tovu
 
-1. Clone this repository on your computer by clicking <a href="https://github.com/OpenInstitute/tovu/archive/master.zip" target="blank"> download zip</a> or use this on your terminal:
+1. Clone this repository on your computer by clicking <a href="https://github.com/TovuInitiative/Tovu/archive/master.zip" target="blank"> download zip</a> or use this on your terminal:
 ##### Tip: Make sure you have git installed on your terminal.
 ```git clone https://github.com/OpenInstitute/tovu.git my-preferred-folder ``` - You can replace my-preferred-folder with any name
     
