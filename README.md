@@ -1,5 +1,5 @@
 # Tovu Platfom
-Web portal that facilitates management of a central data repository for an organization. This portal has a document repository (library), articles section (experiences and innovations, news and events) and discussion forums. The portal runs on a custom built Content Management System (CMS) with an administrative backend where you can easily manage upload of resources, manage articles, forums, navigation links and user accounts / registrations. The platform is open source and can be used freely by any organization/entity.
+Tovu is an open source database driven web platform that facilitates management of a central data repository for an organization. The platform has a document repository (library), articles section (experiences and innovations, news and events) and discussion forums. The platform runs on a custom built Content Management System (CMS) with an administrative backend where you can easily manage upload of resources, manage articles, forums, navigation links and user accounts / registrations. The platform is open source and can be used freely by any organization/entity.
 
 Tovu has been developed using PHP, HTML and Javascript, and runs on MySql database.
 
